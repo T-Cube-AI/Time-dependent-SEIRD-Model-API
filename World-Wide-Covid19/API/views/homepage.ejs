@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/homepage.css">
+    <link rel="stylesheet" href="/styles/landing_page.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+    <%- include("partials/landing_page.ejs") %>
+    <div class="docs-container">
+        <div class="docs">
+            <div class="endpoint">
+                <span class="name">/countries</span>
+                <div class="python-code">
+                    <span>Eg. Python Code</span>
+                    <div class="code">
+                        import requests
+                        <br />
+                        <br />
+
+                        response = requests.get('c19api.com/countries')
+                        <br />
+                        listOfCountries = response.json()
+                    </div>
+                </div>
+                <div class="response">
+                    <h4>Response</h4>
+                    This endpoint provides you with a list of countries that we are currently working on.
+                </div>
+            </div>
+            <div class="endpoint">
+                <div class="name">/countries/:country</div>
+                <div class="python-code">
+                    <span>Eg. Python Code</span>
+                    <div class="code">
+                        import requests
+                        <br />
+                        <br />
+
+                        response = requests.get('c19api.com/countries/Russia')
+                        <br />
+                        listOfCountries = response.json()
+                    </div>
+                </div>
+                <div class="response">
+                    <h4>Response</h4>
+                    This endpoint provides you with a list of regions/states of that particular country.
+                </div>
+            </div>
+            <div class="endpoint">
+                <div class="name">/countries/:country/:region</div>
+                <div class="python-code">
+                    <span>Eg. Python Code</span>
+                    <div class="code">
+                        import requests
+                        <br />
+                        <br />
+
+                        response = requests.get('c19api.com/countries/Russia/Moscow')
+                        <br />
+                        listOfCountries = response.json()
+                    </div>
+                </div>
+                <div class="response">
+                    <h4>Response</h4>
+                    This endpoint provides you with a json object of next seven days' predictions of that
+                    particular
+                    region.
+                </div>
+            </div>
+            <div class="endpoint">
+                <div class="name">/countries/:country/:state</div>
+                <div class="python-code">
+                    <span>Eg. Python Code</span>
+                    <div class="code">
+                        import requests
+                        <br />
+                        <br />
+
+                        response = requests.get('c19api.com/countries/US/Alaska')
+                        <br />
+                        listOfCountries = response.json()
+                    </div>
+                </div>
+                <div class="response">
+                    <h4>Response</h4>
+                    This endpoint provides you with a json object of next seven days' predictions of that
+                    particular State.
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("partials/footer.ejs") %>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+.landing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+}
+
+.landing::before {
+  --circle-size: 95vh;
+  content: '';
+  position: absolute;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  background: linear-gradient(45deg, #46aae4, #41eb90);
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(4);
+          transform: translateX(-50%) scale(4);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-radius: 50%;
+}
+
+.landing .header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+
+.landing .header .logo {
+  color: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.landing .scroll-bottom {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.landing .scroll-bottom i {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  font-size: 17px;
+  -webkit-animation: animate-scroll-down-arrow 1s infinite;
+          animation: animate-scroll-down-arrow 1s infinite;
+}
+
+.landing .api-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  height: 350px;
+  width: 45vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(20%);
+          transform: translateX(-50%) translateY(20%);
+  background-color: white;
+  color: #002a4d;
+}
+
+.landing .api-info .api-logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #46aae4;
+  margin-bottom: 10%;
+  border-radius: 50%;
+}
+
+.landing .api-info .api-logo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.landing .api-info h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #1374ac;
+}
+/*# sourceMappingURL=landing_page.css.map */

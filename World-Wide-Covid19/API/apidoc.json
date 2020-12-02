@@ -1,0 +1,8 @@
+{
+    "name": "R.E.C.O.V.E.R Covid-19 predictive API",
+    "version": "1.0.0",
+    "description": "Covid 19 predictive API.",
+    "template": {
+        "forceLanguage": "en"
+    }
+}
